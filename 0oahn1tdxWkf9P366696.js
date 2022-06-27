@@ -15,9 +15,6 @@ head.appendChild(link);
 
 console.log(getClientId(), "testing this...");
 
-// Clear the body first
-document.body.innerHTML = ""
-
 let div = document.createElement("div");
 div.innerHTML = `
     <div id="left-content">
@@ -33,11 +30,12 @@ div.innerHTML = `
         <p className="text">Talk to us today!</p>
     </div>
     <div id="right-content">
-        <div id="okta-login-container" />
     </div>
 `
 div.id ="content"
 document.body.appendChild(div);
+
+document.getElementById("right-content").appendChild(document.getElementById("okta-login-container"))
 
 var config = OktaUtil.getSignInWidgetConfig();
 var oktaSignIn = new OktaSignIn(config);
