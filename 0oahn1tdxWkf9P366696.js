@@ -36,16 +36,3 @@ div.id ="content"
 document.body.appendChild(div);
 
 document.getElementById("right-content").appendChild(document.getElementById("okta-login-container"))
-
-var config = OktaUtil.getSignInWidgetConfig();
-var oktaSignIn = new OktaSignIn(config);
-oktaSignIn.renderEl({ el: '#okta-login-container' },
-    OktaUtil.completeLogin,
-    function(error) {
-        // Logs errors that occur when configuring the widget.
-        // Remove or replace this with your own custom error handler.
-        console.log(error.message, error);
-    }
-);
-
-console.log(oktaSignIn);
