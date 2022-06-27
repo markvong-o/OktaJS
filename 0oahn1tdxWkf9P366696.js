@@ -16,5 +16,5 @@ head.appendChild(link);
 console.log(getClientId(), "testing this...");
 
 
-let text = document.createElement('<p style="color:green;">This is a test text');
+let text = document.createElement('<p style="color:green;">This is a test text</p>');
 document.body.appendChild(text);
