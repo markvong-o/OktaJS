@@ -49,3 +49,5 @@ oktaSignIn.renderEl({ el: '#okta-login-container' },
         console.log(error.message, error);
     }
 );
+
+console.log(oktaSignIn);
