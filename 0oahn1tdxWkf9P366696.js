@@ -19,15 +19,15 @@ let div = document.createElement("div");
 div.innerHTML = `
     <div id="left-content">
         <p id="title">Welcome to the <span className="brand">Iron Bank</span></p>
-        <p className="text">Our mission is to serve our community.</p>
-        <p className="text">We offer the following:</p>
+        <p class="text">Our mission is to serve our community.</p>
+        <p class="text">We offer the following:</p>
         <ul id="list">
             <li>Commercial Lending</li>
             <li>Personal Banking</li>
             <li>Castle Loans</li>
             <li>Dragon Loans</li>
         </ul>
-        <p className="text">Talk to us today!</p>
+        <p class="text">Talk to us today!</p>
     </div>
     <div id="right-content">
     </div>
