@@ -18,7 +18,7 @@ console.log(getClientId(), "testing this...");
 let div = document.createElement("div");
 div.innerHTML = `
     <div id="left-content">
-        <p id="title">Welcome to the <span className="brand">Iron Bank</span></p>
+        <p id="title">Welcome to the <span class="brand">Iron Bank</span></p>
         <p class="text">Our mission is to serve our community.</p>
         <p class="text">We offer the following:</p>
         <ul id="list">
