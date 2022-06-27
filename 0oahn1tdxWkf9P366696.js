@@ -39,13 +39,13 @@ div.innerHTML = `
 div.id ="content"
 document.body.appendChild(div);
 
-// var config = OktaUtil.getSignInWidgetConfig();
-// var oktaSignIn = new OktaSignIn(config);
-// oktaSignIn.renderEl({ el: '#okta-login-container' },
-//     OktaUtil.completeLogin,
-//     function(error) {
-//         // Logs errors that occur when configuring the widget.
-//         // Remove or replace this with your own custom error handler.
-//         console.log(error.message, error);
-//     }
-// );
+var config = OktaUtil.getSignInWidgetConfig();
+var oktaSignIn = new OktaSignIn(config);
+oktaSignIn.renderEl({ el: '#okta-login-container' },
+    OktaUtil.completeLogin,
+    function(error) {
+        // Logs errors that occur when configuring the widget.
+        // Remove or replace this with your own custom error handler.
+        console.log(error.message, error);
+    }
+);
